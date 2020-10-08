@@ -1,6 +1,7 @@
 import React from 'react'
 
 import LoadingFeedPost from '../Shimmer/LoadingFeedPosts'
+import LoadingFeedShare from '../Shimmer/LoadingFeedShare'
 
 import FeedShare from './FeedShare'
 import FeedPost from './FeedPost'
@@ -12,7 +13,7 @@ const MiddleColumn: React.FC<LoadingProps> = ({ isLoading }) => {
     <Container className="middle-column">
       {isLoading ? (
         <>
-          {/* <LoadingFeedShare /> */}
+          <LoadingFeedShare />
           <LoadingFeedPost />
         </>
       ) : (
