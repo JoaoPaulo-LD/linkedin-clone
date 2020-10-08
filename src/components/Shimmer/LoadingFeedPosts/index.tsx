@@ -1,11 +1,26 @@
 import React from 'react'
 
+import Panel from '../../Panel'
+import Skeleton from '../../Skeleton'
 import { Container } from './styles'
 
 const LoadingFeedPosts: React.FC = () => {
   return (
     <Container>
-      <h1>LoadingFeedPosts</h1>
+      <Panel className="no-shadow">
+        <header>
+          <Skeleton className="avatar-skeleton" />
+          <div className="column">
+            <Skeleton className="row-skeleton" />
+            <Skeleton className="row-skeleton" />
+          </div>
+        </header>
+
+        <span>
+          <Skeleton className="row-skeleton" />
+          <Skeleton className="row-skeleton" />
+        </span>
+      </Panel>
     </Container>
   )
 }

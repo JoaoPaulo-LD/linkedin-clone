@@ -1,6 +1,6 @@
 import React from 'react'
 
-import LoadingFeedPost from '../Shimmer/LoadingFeedPost'
+import LoadingFeedPost from '../Shimmer/LoadingFeedPosts'
 
 import FeedShare from './FeedShare'
 import FeedPost from './FeedPost'
