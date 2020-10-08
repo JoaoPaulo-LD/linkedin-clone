@@ -14,11 +14,11 @@ import { Container } from './styles'
 const Layout: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true)
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setIsLoading(false)
-  //   }, 1000)
-  // }, [])
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false)
+    }, 1000)
+  }, [])
 
   return (
     <Container>
@@ -26,7 +26,7 @@ const Layout: React.FC = () => {
       <DesktopHeader />
 
       <span>
-        <AdBanner />
+        {!isLoading && <AdBanner />}
       </span>
 
       <main>

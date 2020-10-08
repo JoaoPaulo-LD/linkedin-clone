@@ -15,6 +15,9 @@ const MiddleColumn: React.FC<LoadingProps> = ({ isLoading }) => {
         <>
           <LoadingFeedShare />
           <LoadingFeedPost />
+          <LoadingFeedPost />
+          <LoadingFeedPost />
+          <LoadingFeedPost />
         </>
       ) : (
         <>
